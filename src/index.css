@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+
+@font-face {
+    font-family: 'Saiyan-Sans';
+    src: url('/fonts/saiyan/Saiyan-Sans.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Saiyan-Sans-Left';
+    src: url('/fonts/saiyan/Saiyan-Sans Left Oblique.ttf') format('truetype');
+    font-weight: normal;
+    font-style: oblique;
+}
+
+@font-face {
+    font-family: 'Saiyan-Sans-Right';
+    src: url('/fonts/saiyan/Saiyan-Sans Right Oblique.ttf') format('truetype');
+    font-weight: normal;
+    font-style: oblique;
+}
+
+@keyframes audioBar {
+
+    0%,
+    100% {
+        transform: scaleY(1);
+    }
+
+    50% {
+        transform: scaleY(1.8);
+    }
+}
+
+.animate-audio-bar {
+    animation: audioBar 0.8s infinite ease-in-out;
+    transform-origin: bottom;
+}
