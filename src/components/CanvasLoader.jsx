@@ -1,15 +1,12 @@
 // src/components/CanvasLoader.jsx
 import React from 'react';
-import { Html, useProgress } from '@react-three/drei';
+import { Html } from '@react-three/drei';
 
 const CanvasLoader = () => {
-  const { progress } = useProgress();
-
   return (
     <Html center>
-      <div style={{ color: 'white', fontSize: '1.5rem', fontWeight: 'bold' }}>
-        Loading... {Math.floor(progress)}%
-      </div>
+      <div className="absolute -translate-x-[50%] -translate-y-[50%] w-[50px] h-[50px] rounded-full bg-[#a9c23b] blur-sm opacity-80 animate-pulse z-0"></div>
+
     </Html>
   );
 };

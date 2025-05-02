@@ -71,8 +71,8 @@ const NavBar = () => {
                             transition={{ duration: 0.6, ease: "easeOut" }}
                         >
 
-                            <span className="text-yellow-400 font-['Saiyan-Sans']">Hack</span>
-                            <span className="text-red-500 font-['Saiyan-Sans']">Nova</span>
+                            <span className="text-yellow-400 font-['Saiyan-Sans'] text-4xl">Hack</span>
+                            <span className="text-red-500 font-['Saiyan-Sans'] text-4xl">Nova</span>
                         </motion.span>
 
                         <Button
