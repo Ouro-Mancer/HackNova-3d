@@ -43,14 +43,10 @@ const About = () => {
 
                             Inspired by the high-stakes energy of <span className="text-red-400 font-bold">Dragon Ball Z</span>, HackNova fuses futuristic visuals with hardcore problem-solving. Participants will face challenges, surprise quests, and creative puzzles designed to push their brain’s power level over 9000.
                             <br /><br />
-                            But this isn’t just about code. Expect immersive experiences — from neon-lit arenas, interactive tech zones, to mini-games, giveaways, and side quests that keep the adrenaline pumping. Whether you're building your first app or launching your 10th startup idea, HackNova is your stage to shine.
-                            <br /><br />
+
                             So power up, assemble your crew, and prepare for a legendary coding showdown unlike any other.
                         </p>
 
-                        <button className="mt-6 px-6 py-2 bg-pink-500 hover:bg-pink-600 hover:scale-90 text-white rounded-full shadow-lg transition-all duration-300">
-                            Know More
-                        </button>
                     </div>
 
                     {/* Divider for Mobile */}
@@ -65,7 +61,7 @@ const About = () => {
                         {/* Base Glow Behind Character */}
                         <div className="absolute w-[450px] h-[450px] bg-cyan-400/20 rounded-full blur-[120px] opacity-30"></div>
 
-                        
+
 
                         {/* Dragon Balls */}
                         {[...Array(7)].map((_, i) => (
