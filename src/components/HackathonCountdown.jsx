@@ -42,7 +42,7 @@ const HackathonCountdown = () => {
                 🔥 Test your limits. Power up your skills. It's time to go beyond.
             </p>
 
-            <div className="flex gap-4 text-center bg-white/5 backdrop-blur-sm border border-[#3b366e] p-4 rounded-xl shadow-md w-fit">
+            <div className="flex flex-wrap justify-center sm:justify-start gap-4 text-center bg-white/5 backdrop-blur-sm border border-[#3b366e] p-4 rounded-xl shadow-md w-full sm:w-fit mb-4 ">
                 {["Days", "Hours", "Minutes", "Seconds"].map((label, i) => {
                     const keys = ["days", "hours", "minutes", "seconds"];
                     return (
