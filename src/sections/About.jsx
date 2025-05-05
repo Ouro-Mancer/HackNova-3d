@@ -38,7 +38,7 @@ const About = () => {
                         </h2>
 
                         <p className="text-gray-300 text-sm sm:text-base lg:text-lg leading-relaxed tracking-wide">
-                            Welcome to <span className="text-yellow-400 font-bold">HackNova</span> — the ultimate battleground where code meets chaos, ideas meet execution, and developers go Super Saiyan. This is not your average hackathon; this is a 30-hour, no-sleep, caffeine-fueled offline coding marathon designed to break barriers and test limits.
+                            Welcome to <span className="text-yellow-400 font-bold">HackNova</span> — the ultimate battleground where code meets chaos, ideas meet execution, and developers go Super Saiyan. This is not your average hackathon; this is a 36-hour, no-sleep, caffeine-fueled offline coding marathon designed to break barriers and test limits.
                             <br /><br />
 
                             Inspired by the high-stakes energy of <span className="text-red-400 font-bold">Dragon Ball Z</span>, HackNova fuses futuristic visuals with hardcore problem-solving. Participants will face challenges, surprise quests, and creative puzzles designed to push their brain’s power level over 9000.
