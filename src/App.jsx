@@ -2,6 +2,7 @@ import React from 'react'
 import Hero from './sections/Hero'
 import NavBar from './sections/Navbar'
 import About from './sections/About'
+import ReachMIET from './sections/ReachMIET'
 import Footer from './sections/Footer'
 
 const App = () => {
@@ -10,6 +11,7 @@ const App = () => {
       <NavBar />
       <Hero />
       <About />
+      <ReachMIET />
       <Footer/>
     </div>
   )
