@@ -7,7 +7,7 @@ import Footer from './sections/Footer'
 
 const App = () => {
   return (
-    <div className='bg-[#131225] text-white min-h-screen overflow-x-hidden'>
+    <div className='bg-[#131225] text-white min-h-screen overflow-hidden'>
       <NavBar />
       <Hero />
       <About />
