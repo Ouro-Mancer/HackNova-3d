@@ -38,15 +38,12 @@ const About = () => {
                         </h2>
 
                         <p className="text-gray-300 text-sm sm:text-base lg:text-lg leading-relaxed tracking-wide">
-                            Welcome to <span className="text-yellow-400 font-bold">HackNova</span> — the ultimate battleground where code meets chaos, ideas meet execution, and developers go Super Saiyan. This is not your average hackathon; this is a 36-hour, no-sleep, caffeine-fueled offline coding marathon designed to break barriers and test limits.
+                            Welcome to <span className="text-yellow-400 font-bold">HackNova 2025</span> — a 36-hour offline hackathon designed to ignite innovation, creativity, and collaboration.
                             <br /><br />
-
-                            Inspired by the high-stakes energy of <span className="text-red-400 font-bold">Dragon Ball Z</span>, HackNova fuses futuristic visuals with hardcore problem-solving. Participants will face challenges, surprise quests, and creative puzzles designed to push their brain’s power level over 9000.
+                            Whether you're building your first app or launching your next big idea, HackNova is the perfect space to push boundaries, learn fast, and bring bold visions to life. With real-world challenges, mentorship from industry experts, and an electrifying atmosphere, this is more than a competition — it’s a journey of discovery and growth.
                             <br /><br />
-
-                            So power up, assemble your crew, and prepare for a legendary coding showdown unlike any other.
+                            Come for the code. Stay for the community. Leave with new skills, stronger networks, and a story worth telling.
                         </p>
-
                     </div>
 
                     {/* Divider for Mobile */}
