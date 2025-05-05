@@ -2,7 +2,7 @@ import React from 'react'
 import Hero from './sections/Hero'
 import NavBar from './sections/NavBar.jsx'
 import About from './sections/About'
-import ReachMIET from './sections/ReachMIET'
+import ReachGTBIT from './sections/ReachGTBIT.jsx'
 import Footer from './sections/Footer'
 
 const App = () => {
@@ -11,7 +11,7 @@ const App = () => {
       <NavBar />
       <Hero />
       <About />
-      <ReachMIET />
+      <ReachGTBIT />
       <Footer/>
     </div>
   )
