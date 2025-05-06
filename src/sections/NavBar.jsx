@@ -9,28 +9,28 @@ import Button from "../components/Button";
 const navItems = ["About", "Tracks", "Schedule", "Prizes", "Sponsors", "Team", "Join us"];
 
 const NavBar = () => {
-    const [isAudioPlaying, setIsAudioPlaying] = useState(false);
+    // const [isAudioPlaying, setIsAudioPlaying] = useState(false);
     const [isIndicatorActive, setIsIndicatorActive] = useState(false);
 
-    const audioElementRef = useRef(null);
+    // const audioElementRef = useRef(null);
     const navContainerRef = useRef(null);
 
     const { y: currentScrollY } = useWindowScroll();
     const [isNavVisible, setIsNavVisible] = useState(true);
     const [lastScrollY, setLastScrollY] = useState(0);
 
-    const toggleAudioIndicator = () => {
-        setIsAudioPlaying((prev) => !prev);
-        setIsIndicatorActive((prev) => !prev);
-    };
+    // const toggleAudioIndicator = () => {
+    //     setIsAudioPlaying((prev) => !prev);
+    //     setIsIndicatorActive((prev) => !prev);
+    // };
 
-    useEffect(() => {
-        if (isAudioPlaying) {
-            audioElementRef.current.play();
-        } else {
-            audioElementRef.current.pause();
-        }
-    }, [isAudioPlaying]);
+    // useEffect(() => {
+    //     if (isAudioPlaying) {
+    //         audioElementRef.current.play();
+    //     } else {
+    //         audioElementRef.current.pause();
+    //     }
+    // }, [isAudioPlaying]);
 
     useEffect(() => {
         if (currentScrollY === 0) {
@@ -119,7 +119,7 @@ const NavBar = () => {
                             ))}
                         </motion.div>
 
-                        <button
+                        {/* <button
                             onClick={toggleAudioIndicator}
                             className="ml-10 flex items-end gap-1"
                         >
@@ -144,7 +144,7 @@ const NavBar = () => {
                                     }}
                                 />
                             ))}
-                        </button>
+                        </button> */}
                     </div>
                 </nav>
             </header>
