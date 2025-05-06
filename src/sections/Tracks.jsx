@@ -52,7 +52,7 @@ export default function Tracks() {
     return (
         <section
             ref={sectionRef}
-            className="relative w-full min-h-screen bg-[#131225] text-white py-24 px-6 overflow-hidden "
+            className="relative max-w-[1200px] mx-auto w-full min-h-screen bg-[#131225] text-white py-24 px-6 overflow-hidden "
         >
             <div className="max-w-6xl mx-auto text-center mb-12">
                 <h2 className="text-5xl font-extrabold tracking-widest text-pink-500 font-[Saiyan-Sans] uppercase">
