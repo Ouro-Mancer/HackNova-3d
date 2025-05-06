@@ -57,7 +57,7 @@ const ReachGTBIT = () => {
     <section
       ref={sectionRef}
       id="reach"
-      className="relative bg-[#7974aa] text-white py-20 px-6 md:px-20 overflow-hidden"
+      className="relative bg-[#131225] text-white py-20 px-6 md:px-20 overflow-hidden"
     >
       
       <div className="absolute -top-10 -right-10 w-60 h-60 bg-purple-700 blur-3xl opacity-30 rounded-full z-0"></div>

@@ -12,13 +12,9 @@ const App = () => {
       <NavBar />
       <Hero />
       <About />
-<<<<<<< HEAD
       <Tracks />
+      <ReachGTBIT/>
       <Footer />
-=======
-      <ReachGTBIT />
-      <Footer/>
->>>>>>> 6fc4fcb92a2e3bc3934811ffc92f92b335d5f58f
     </div>
   )
 }
