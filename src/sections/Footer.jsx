@@ -53,7 +53,7 @@ const Footer = () => {
   return (
     <footer
       ref={footerRef}
-      className="bg-[#131225] text-white py-12 px-6 lg:px-20"
+      className="bg-[#131225]  text-white py-12 px-6 lg:px-20"
     >
       <div className="max-w-screen-xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
         {/* Branding + Socials */}

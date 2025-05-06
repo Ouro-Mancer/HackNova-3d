@@ -3,6 +3,7 @@ import Hero from './sections/Hero'
 import NavBar from './sections/NavBar.jsx'
 import About from './sections/About'
 import Footer from './sections/Footer'
+import Tracks from './sections/Tracks.jsx'
 
 const App = () => {
   return (
@@ -10,7 +11,8 @@ const App = () => {
       <NavBar />
       <Hero />
       <About />
-      <Footer/>
+      <Tracks />
+      <Footer />
     </div>
   )
 }

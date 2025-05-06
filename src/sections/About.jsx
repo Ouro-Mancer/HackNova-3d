@@ -6,7 +6,7 @@ const About = () => {
         <div className="w-full px-4 py-14 bg-[#131225] relative overflow-hidden text-white">
             {/* Particle Background */}
             <div className="absolute inset-0 z-0 overflow-hidden">
-                <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent via-[#ffffff09] to-transparent backdrop-blur-md" />
+                <div className="absolute top-0 left-0 w-full h-full " />
                 {[...Array(40)].map((_, i) => (
                     <div
                         key={i}
@@ -76,7 +76,7 @@ const About = () => {
                             />
                         ))}
 
-                        {/* 3D Vegeta */}
+                        {/* 3D Frieza */}
                         <div className="w-full h-full z-20">
                             <FriezaCanvas />
                         </div>
