@@ -5,6 +5,7 @@ import About from './sections/About'
 import ReachGTBIT from './sections/ReachGTBIT.jsx'
 import Footer from './sections/Footer'
 import Tracks from './sections/Tracks.jsx'
+import FAQSection from './sections/FAQSection.jsx'
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
       <Hero />
       <About />
       <Tracks />
+      <FAQSection />
       <ReachGTBIT/>
       <Footer />
     </div>
