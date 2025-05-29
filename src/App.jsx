@@ -7,6 +7,7 @@ import Footer from './sections/Footer'
 import Tracks from './sections/Tracks.jsx'
 import FAQSection from './sections/FAQSection.jsx'
 import VenueSection from './sections/VenueSection.jsx'
+import Schedule from './sections/Schedule.jsx'
 
 const App = () => {
   return (
@@ -15,9 +16,10 @@ const App = () => {
       <Hero />
       <About />
       <Tracks />
+      <Schedule />
       <VenueSection />
       <FAQSection />
-      <ReachGTBIT/>
+      <ReachGTBIT />
       <Footer />
     </div>
   )
