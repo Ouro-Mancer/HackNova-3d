@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+
 import ScrollTrigger from "gsap/ScrollTrigger";
 import {
     FaRobot,
@@ -30,20 +31,22 @@ export default function Tracks() {
         const ctx = gsap.context(() => {
             gsap.fromTo(
                 cardsRef.current,
-                { opacity: 0, scale: 0.85 },
+                { opacity: 0, y: 50 }, // removed scale
                 {
                     opacity: 1,
-                    scale: 1,
+
+                    y: 0,
                     duration: 0.6,
                     stagger: 0.2,
                     ease: "power2.out",
                     scrollTrigger: {
                         trigger: sectionRef.current,
                         start: "top 80%",
-                        once: true, // ensures smooth play even on refresh
+                        once: true,
                     },
                 }
             );
+
         }, sectionRef);
 
         return () => ctx.revert();
@@ -67,34 +70,13 @@ export default function Tracks() {
                         <div
                             key={track.title}
                             ref={(el) => (cardsRef.current[index] = el)}
-                            className="relative group p-6 rounded-3xl backdrop-blur-md bg-white/5 border border-white/10 transition-all duration-300 transform hover:scale-105 hover:z-10 hover:shadow-[0_0_40px]"
+                            className="relative group p-6 rounded-3xl backdrop-blur-md bg-white/5 border border-white/10  overflow-hidden "
                             style={{
                                 boxShadow: `0 0 30px ${track.color}66`,
                             }}
-                            onMouseEnter={() => {
-                                cardsRef.current.forEach((card, i) => {
-                                    if (i !== index) {
-                                        gsap.to(card, {
-                                            scale: 0.95,
-                                            filter: "blur(2px)",
-                                            duration: 0.2,
-                                            ease: "power1.out",
-                                        });
-                                    }
-                                });
-                            }}
-                            onMouseLeave={() => {
-                                cardsRef.current.forEach((card, i) => {
-                                    if (i !== index) {
-                                        gsap.to(card, {
-                                            scale: 1,
-                                            filter: "blur(0px)",
-                                            duration: 0.2,
-                                            ease: "power1.out",
-                                        });
-                                    }
-                                });
-                            }}
+                            onMouseEnter={() => gsap.to(cardsRef.current[index], { scale: 1.05, duration: 0.3 })}
+                            onMouseLeave={() => gsap.to(cardsRef.current[index], { scale: 1, duration: 0.3 })}
+
                         >
                             <div
                                 className="flex flex-col items-center text-center "

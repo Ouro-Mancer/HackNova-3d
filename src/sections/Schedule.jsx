@@ -263,44 +263,18 @@ const Schedule = () => {
                             {/* Event Details (Enhanced Card) */}
                             <div className="w-1/2 px-4">
                                 <motion.div
-                                    className={`relative group p-6 rounded-3xl backdrop-blur-md bg-white/5 border border-white/10 transition-all duration-300 transform ${isPast
-                                        ? "opacity-50"
-                                        : isActive
-                                            ? "shadow-[0_0_20px_rgba(59,130,246,0.6)]"
-                                            : ""
-                                        } hover:scale-105 hover:z-10 hover:shadow-[0_0_40px_rgba(59,130,246,0.6)] overflow-hidden`}
+                                    className={`relative group p-6 rounded-md backdrop-blur-md bg-white/5 border border-yellow-500/5 transition-all duration-300 transform  hover:scale-105 overflow-hidden`}
                                     style={{
-                                        boxShadow: `0 0 30px rgba(59, 130, 246, 0.4)`,
+                                        boxShadow: `0 0 30px rgba(150, 160, 24, 0.4)`,
                                     }}
                                     transition={{ type: "spring", stiffness: 300 }}
                                 >
-                                    {/* Energy Particles Inside Card */}
-                                    {[...Array(5)].map((_, i) => (
-                                        <motion.div
-                                            key={i}
-                                            className="absolute w-1 h-1 bg-[#605f5c] rounded-full opacity-30"
-                                            style={{
-                                                top: `${Math.random() * 100}%`,
-                                                left: `${Math.random() * 100}%`,
-                                            }}
-                                            animate={{
-                                                scale: [0.5, 1, 0.5],
-                                                opacity: [0.3, 0.6, 0.3],
-                                                x: Math.random() * 20 - 10,
-                                                y: Math.random() * 20 - 10,
-                                            }}
-                                            transition={{
-                                                duration: 2 + Math.random(),
-                                                repeat: Infinity,
-                                                delay: i * 0.2,
-                                            }}
-                                        />
-                                    ))}
+
 
                                     {/* Pulsing Aura for Active Cards */}
                                     {isActive && (
                                         <motion.div
-                                            className="absolute inset-0 rounded-3xl bg-[#f5a623] opacity-20 blur-xl"
+                                            className="absolute inset-0 rounded-3xl bg-[#e7f523] opacity-20 blur-xl"
                                             animate={{ opacity: [0.2, 0.4, 0.2], scale: [1, 1.02, 1] }}
                                             transition={{ duration: 2, repeat: Infinity }}
                                         />
@@ -317,7 +291,7 @@ const Schedule = () => {
                                     <div
                                         className="relative flex flex-col items-center text-center z-10"
                                         style={{
-                                            background: `radial-gradient(circle at center, rgba(59, 130, 246, 0.133) 0%, transparent 70%)`,
+                                            background: `radial-gradient(circle at center, rgba(150, 160, 24, 0.2) 0%, transparent 70%)`,
                                         }}
                                     >
                                         {/* Event Icon Inside Card */}
@@ -331,7 +305,7 @@ const Schedule = () => {
 
                                         {/* Title with Gradient */}
                                         <h3
-                                            className="text-2xl font-bold mb-2 bg-gradient-to-r from-[#f5a623] to-[#f63b3b] bg-clip-text text-transparent"
+                                            className="text-2xl font-bold mb-2 bg-gradient-to-r from-[#ed0606] to-[#f9f903] bg-clip-text text-transparent"
                                             style={{ filter: "drop-shadow(0 0 5px rgba(59, 130, 246, 0.5))" }}
                                         >
                                             {event.title}
