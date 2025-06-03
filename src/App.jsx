@@ -8,6 +8,7 @@ import Tracks from './sections/Tracks.jsx'
 import FAQSection from './sections/FAQSection.jsx'
 import VenueSection from './sections/VenueSection.jsx'
 import Schedule from './sections/Schedule.jsx'
+import Prizes from './sections/Prizes.jsx'
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
       <About />
       <Tracks />
       <Schedule />
+      <Prizes />
       <VenueSection />
       <FAQSection />
       <ReachGTBIT />

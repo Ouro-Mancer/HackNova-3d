@@ -1,5 +1,6 @@
 import React from 'react'
 import FriezaCanvas from '../canvas/FriezaCanvas'
+import ModelCanvas from '../canvas/ModelCanvas'
 
 const About = () => {
     return (
@@ -75,7 +76,15 @@ const About = () => {
 
                         {/* 3D Frieza */}
                         <div className="w-full h-full z-20">
-                            <FriezaCanvas />
+                            {/* <FriezaCanvas /> */}
+                            <ModelCanvas
+                                modelPath='/models/frieza.glb'
+                                position={[0, 0.3, 0]} 
+                                scale={[2.5, 2.5, 2.5]} 
+                                rotation={[-0.5, 0, 0]}
+                                autorotate={true}
+                                autorotateSpeed={1}
+                            />
                         </div>
                     </div>
                 </div>

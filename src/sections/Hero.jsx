@@ -3,6 +3,7 @@ import GohanCanvas from '../canvas/GohanCanvas'
 import GokuCanvas from '../canvas/GokuCanvas'
 import Shenron from '../assets/Shenron with code.png'
 import HackathonCountdown from '../components/HackathonCountdown'
+import ModelCanvas from '../canvas/ModelCanvas'
 
 const Hero = () => {
   return (
@@ -40,7 +41,16 @@ const Hero = () => {
           <div className="w-full lg:w-1/3 relative h-[400px] sm:h-[500px] md:h-[550px] lg:h-[600px] flex items-center justify-center">
             <div className="absolute w-[200px] sm:w-[300px] md:w-[350px] lg:w-[400px] h-[200px] sm:h-[300px] md:h-[350px] lg:h-[400px] rounded-full bg-[#57537f] blur-3xl opacity-60 z-0"></div>
             <div className="absolute w-full h-full z-10">
-              <GohanCanvas />
+              {/* <GohanCanvas /> */}
+              <ModelCanvas
+                modelPath='/models/Gohan HD.glb'
+                position={[0, 0.3, 0]}
+                scale={[5, 5, 5]}
+                rotation={[0, 3.6, 0]}
+                autorotate={true}
+                autorotateSpeed={1}
+                intensity={4}
+              />
             </div>
           </div>
         </div>
@@ -55,7 +65,16 @@ const Hero = () => {
           <div className="relative w-full lg:w-1/2 h-[300px] sm:h-[320px] flex items-center justify-center">
             <div className="absolute w-[200px] sm:w-[300px] md:w-[350px] lg:w-[400px] h-[200px] sm:h-[300px] md:h-[350px] lg:h-[400px] rounded-full bg-[#171742] blur-3xl opacity-50 z-0"></div>
             <div className="absolute -top-10 sm:-top-14 md:-top-16 left-1/2 -translate-x-1/2 w-[300px] sm:w-[400px] md:w-[450px] lg:w-[500px] h-[300px] sm:h-[400px] md:h-[450px] lg:h-[500px] z-10 pointer-events-none">
-              <GokuCanvas />
+              {/* <GokuCanvas /> */}
+              <ModelCanvas
+                modelPath='/models/Goku HD.glb'
+                position={[0, 0, -0.5]}
+                scale={[5.5, 5.5, 5.5]}
+                rotation={[0, 3.9, 0]}
+                autorotate={false}
+                autorotateSpeed={1}
+                intensity={1}
+              />
             </div>
           </div>
 
