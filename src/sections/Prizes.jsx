@@ -88,7 +88,7 @@ export default function Prizes() {
                 </p>
             </div>
 
-            <div className=" h-full w-full ">
+            <div className=" h-[450px] w-full ">
 
                 {/* <TrunksCanvas /> */}
                 <ModelCanvas
