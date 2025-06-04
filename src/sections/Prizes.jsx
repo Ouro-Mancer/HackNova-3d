@@ -95,12 +95,13 @@ export default function Prizes() {
 
                 {/* <TrunksCanvas /> */}
                 <ModelCanvas
-                    modelPath='/models/future_trunks_dbz.glb'
+                    // modelPath='/models/future_trunks_dbz.glb'
+                    modelPath='/models/future_trunks_dbz_compressed.glb'
                     position={[-2, -1.8, 0]}
                     scale={[2.8, 2.8, 2.8]}
                     rotation={[0.1, 0, 0]}
                     autorotate={true}
-                    autorotateSpeed = {1}
+                    autorotateSpeed={1}
                 />
 
             </div>

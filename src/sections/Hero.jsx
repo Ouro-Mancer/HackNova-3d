@@ -43,7 +43,8 @@ const Hero = () => {
             <div className="absolute w-full h-full z-10">
               {/* <GohanCanvas /> */}
               <ModelCanvas
-                modelPath='/models/Gohan HD.glb'
+                // modelPath='/models/Gohan HD.glb'
+                modelPath='/models/Gohan_HD_compressed.glb'
                 position={[0, 0.3, 0]}
                 scale={[5, 5, 5]}
                 rotation={[0, 3.6, 0]}

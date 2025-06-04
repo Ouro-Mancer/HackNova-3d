@@ -78,9 +78,10 @@ const About = () => {
                         <div className="w-full h-full z-20">
                             {/* <FriezaCanvas /> */}
                             <ModelCanvas
-                                modelPath='/models/frieza.glb'
-                                position={[0, 0.3, 0]} 
-                                scale={[2.5, 2.5, 2.5]} 
+                                // modelPath='/models/frieza.glb'
+                                modelPath='/models/frieza_compressed.glb'
+                                position={[0, 0.3, 0]}
+                                scale={[2.5, 2.5, 2.5]}
                                 rotation={[-0.5, 0, 0]}
                                 autorotate={true}
                                 autorotateSpeed={1}
