@@ -1,5 +1,4 @@
 import React from 'react'
-import FriezaCanvas from '../canvas/FriezaCanvas'
 import ModelCanvas from '../canvas/ModelCanvas'
 
 const About = () => {

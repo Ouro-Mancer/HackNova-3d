@@ -5,9 +5,6 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { motion } from "framer-motion";
 import { FaCrown, FaMedal, FaAward } from "react-icons/fa";
 import Shenron from "../assets/Shenron with code.png";
-import KidGokuCanvas from "../canvas/KidGokuCanvas";
-import FriezaCanvas from "../canvas/FriezaCanvas";
-import GohanCanvas from "../canvas/GohanCanvas"
 import ModelCanvas from "../canvas/ModelCanvas";
 
 gsap.registerPlugin(ScrollTrigger);

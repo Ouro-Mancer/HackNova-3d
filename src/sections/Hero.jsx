@@ -1,6 +1,4 @@
 import React from 'react'
-import GohanCanvas from '../canvas/GohanCanvas'
-import GokuCanvas from '../canvas/GokuCanvas'
 import Shenron from '../assets/Shenron with code.png'
 import HackathonCountdown from '../components/HackathonCountdown'
 import ModelCanvas from '../canvas/ModelCanvas'
