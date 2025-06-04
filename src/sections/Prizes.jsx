@@ -39,18 +39,18 @@ export default function Prizes() {
 
     const prizeCards = [
         {
-            title: "Silver Winner",
-            amount: "₹50,000",
-            icon: <FaMedal className="text-slate-300 text-4xl mb-2" />,
-            glow: "shadow-[0_0_40px_#C0C0C0]",
-            aura: "bg-gradient-to-b from-slate-200/20 to-slate-400/5",
-        },
-        {
             title: "Gold Winner",
             amount: "₹1,00,000",
             icon: <FaCrown className="text-yellow-300 text-4xl mb-2" />,
             glow: "shadow-[0_0_60px_#FFD700]",
             aura: "bg-gradient-to-b from-yellow-400/30 to-yellow-600/10",
+        },
+        {
+            title: "Silver Winner",
+            amount: "₹50,000",
+            icon: <FaMedal className="text-slate-300 text-4xl mb-2" />,
+            glow: "shadow-[0_0_40px_#C0C0C0]",
+            aura: "bg-gradient-to-b from-slate-200/20 to-slate-400/5",
         },
 
         {
@@ -88,7 +88,7 @@ export default function Prizes() {
                 </p>
             </div>
 
-            <div className="flex flex-row h-[470px]">
+            <div className=" h-full w-full ">
 
                 {/* <TrunksCanvas /> */}
                 <ModelCanvas
