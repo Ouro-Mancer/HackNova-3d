@@ -42,13 +42,13 @@ const Hero = () => {
               {/* <GohanCanvas /> */}
               <ModelCanvas
                 // modelPath='/models/Gohan HD.glb'
-                modelPath='/models/Gohan_HD_compressed.glb'
+                modelPath='/models/Gohan_HD_compressed_Mobile.glb'
                 position={[0, 0.3, 0]}
                 scale={[5, 5, 5]}
                 rotation={[0, 3.6, 0]}
                 autorotate={true}
                 autorotateSpeed={1}
-                intensity={4}
+                intensity={2.4}
               />
             </div>
           </div>
@@ -63,12 +63,12 @@ const Hero = () => {
           {/* LEFT: Model + Background Box */}
           <div className="relative w-full lg:w-1/2 h-[300px] sm:h-[320px] flex items-center justify-center">
             <div className="absolute w-[200px] sm:w-[300px] md:w-[350px] lg:w-[400px] h-[200px] sm:h-[300px] md:h-[350px] lg:h-[400px] rounded-full bg-[#171742] blur-3xl opacity-50 z-0"></div>
-            <div className="absolute -top-10 sm:-top-14 md:-top-16 left-1/2 -translate-x-1/2 w-[300px] sm:w-[400px] md:w-[450px] lg:w-[500px] h-[300px] sm:h-[400px] md:h-[450px] lg:h-[500px] z-10 pointer-events-none">
+            <div className="absolute -top-10 sm:-top-14 md:-top-16 left-1/2 -translate-x-1/2 w-[300px] sm:w-[400px] md:w-[450px] lg:w-[550px] h-[300px] sm:h-[400px] md:h-[450px] lg:h-[550px] z-10 pointer-events-none ">
               {/* <GokuCanvas /> */}
               <ModelCanvas
-                modelPath='/models/Goku HD.glb'
+                modelPath='/models/Goku_HD_compressed.glb'
                 position={[0, 0, -0.5]}
-                scale={[5.5, 5.5, 5.5]}
+                scale={[4.8, 4.8, 4.8]}
                 rotation={[0, 3.9, 0]}
                 autorotate={false}
                 autorotateSpeed={1}
